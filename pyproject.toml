@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling>=1.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "negative-space-core"
+version = "0.1.0"
+description = "Core theory of negative space intelligence — what you learn to AVOID is the knowledge"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [{name = "SuperInstance", email = "noreply@superinstance.dev"}]
+keywords = ["negative-space", "ternary", "agents", "avoidance", "intelligence"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/negative_space_core"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
